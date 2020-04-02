@@ -1,0 +1,22 @@
+h1{
+    color: white;
+}
+
+.text-ac-geek{
+    color: #00BCD4 !important;
+}
+
+.btn-geek{
+    background-color: #00BCD4;
+    color: white;
+}
+
+.btn-geek:hover{
+    background-color: #0288D1;
+    color: white;
+}
+
+#header img{
+    width: 80px;
+}
+

@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import $ from 'jquery';
+import Popper from 'popper.js';
 
+import Navbar from './components/Navbar';
+import Top_sect from './components/Top_sect';
+import Speakers from './components/Speakers';
+import Place_time from './components/Place_time';
+import I_want_speaker from './components/I_want_speaker';
+import Bottom_sect from './components/Bottom_sect';
+import Buy_Ticket from './components/Buy-ticket';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <header>
+        <Navbar/>
+      </header>
+      <main>
+        <Top_sect/>
+        <Speakers/>
+        <Place_time/>
+        <I_want_speaker/>
+        <Buy-ticket/>
+      </main>
+      <footer>
+        <Bottom_sect/>
+      </footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+ 
